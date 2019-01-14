@@ -1,0 +1,11 @@
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\WebScrapping.exe.config
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\WebScrapping.exe
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\WebScrapping.pdb
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\bin\Debug\HtmlAgilityPack.xml
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\obj\Debug\WebScrapping.csprojAssemblyReference.cache
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\obj\Debug\WebScrapping.csproj.CoreCompileInputs.cache
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\obj\Debug\WebScrapping.csproj.CopyComplete
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\obj\Debug\WebScrapping.exe
+C:\Users\nickb.DESKTOP-UNG5SPQ\source\repos\WebScrapping\WebScrapping\obj\Debug\WebScrapping.pdb

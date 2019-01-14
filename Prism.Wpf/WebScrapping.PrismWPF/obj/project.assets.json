@@ -1,0 +1,1025 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.13": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "News/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "3.4.0",
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431",
+          "WebScrape": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/News.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/News.dll": {}
+        }
+      },
+      "WebScrape/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "bin/placeholder/WebScrape.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebScrape.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.13": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "News/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "3.4.0",
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431",
+          "WebScrape": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/News.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/News.dll": {}
+        }
+      },
+      "WebScrape/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "bin/placeholder/WebScrape.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebScrape.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.13": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "News/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "3.4.0",
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431",
+          "WebScrape": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/News.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/News.dll": {}
+        }
+      },
+      "WebScrape/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "bin/placeholder/WebScrape.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebScrape.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.8.11": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.13": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "News/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "3.4.0",
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431",
+          "WebScrape": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/News.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/News.dll": {}
+        }
+      },
+      "WebScrape/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.8.11",
+          "Infrastructure": "1.0.0",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "bin/placeholder/WebScrape.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebScrape.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/2.0.4": {
+      "sha512": "PUYeC0w+gGG9+T1/sREZaKQAXErlakvhHwEmxMmtIVJeULBB7QdF80IXkVFeu8pz4Nzx81N2zfwk4WaVn3PeXg==",
+      "type": "package",
+      "path": "commonservicelocator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.2.0.4.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net46/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netcoreapp2.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
+      ]
+    },
+    "Extended.Wpf.Toolkit/3.4.0": {
+      "sha512": "nZlwRi7+CmBGV3b7OQouER05MDBBhPOc5SsPYU6/5OcecPBM/+rJGAsl/iHEf1CeF7rZu5wF3TwzAQs/B5Wn9A==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/3.4.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "extended.wpf.toolkit.3.4.0.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net35/WPFToolkit.dll",
+        "lib/net35/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.DataGrid.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "HtmlAgilityPack/1.8.11": {
+      "sha512": "aHMG6oLnTIvepPiyRt+k19OuDFZDhhSrB3U251kT24zrEmIdJJzYHtazvJioxjFR1fv4bjZ5v+sdb6QRxVKZww==",
+      "type": "package",
+      "path": "htmlagilitypack/1.8.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.8.11.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net20/HtmlAgilityPack.dll",
+        "lib/Net20/HtmlAgilityPack.pdb",
+        "lib/Net20/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "Prism.Core/7.1.0.431": {
+      "sha512": "tBkEf4cDYn2oQfW1wPem4jJK/H1Z4mJsnndO04n2oZyIql7Bj3OVlpfQ6vbPgbtlkEN0oyn02XVurZba3DYqmQ==",
+      "type": "package",
+      "path": "prism.core/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netstandard1.0/Prism.dll",
+        "lib/netstandard1.0/Prism.pdb",
+        "lib/netstandard1.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "lib/uap10.0.15063/Prism.dll",
+        "lib/uap10.0.15063/Prism.pdb",
+        "lib/uap10.0.15063/Prism.pri",
+        "lib/uap10.0.15063/Prism.xml",
+        "lib/uap10.0.16299/Prism.dll",
+        "lib/uap10.0.16299/Prism.pdb",
+        "lib/uap10.0.16299/Prism.pri",
+        "lib/uap10.0.16299/Prism.xml",
+        "prism.core.7.1.0.431.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.Unity/7.1.0.431": {
+      "sha512": "ZabaaPDQlEDpViRQIBslWdqZHz9duytDNdAqL2iLnPXhwl24qM7KuIrW9t6LEp1QVABBD66jKwY48BDsDh8IPg==",
+      "type": "package",
+      "path": "prism.unity/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Unity.Wpf.dll",
+        "lib/net45/Prism.Unity.Wpf.pdb",
+        "lib/net45/Prism.Unity.Wpf.xml",
+        "prism.unity.7.1.0.431.nupkg.sha512",
+        "prism.unity.nuspec"
+      ]
+    },
+    "Prism.Wpf/7.1.0.431": {
+      "sha512": "wcWAJ99CiiUkZXMmIXhVHPQhwgjFHHH/1j1VfBHi1uBOZM04WIxwP6FoiIpCch8LNBq/VYQAddlfbkw6i8Wbdg==",
+      "type": "package",
+      "path": "prism.wpf/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.pdb",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "prism.wpf.7.1.0.431.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "Unity.Abstractions/3.3.1": {
+      "sha512": "6Noq6W6cnB+TFgCf9FfgCN9wTVOiKI0eC1tl4dvbA3xg4ZSULKlpXMf2TVM945y/c1KvEdrq19joxHBOBB8rJA==",
+      "type": "package",
+      "path": "unity.abstractions/3.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "unity.abstractions.3.3.1.nupkg.sha512",
+        "unity.abstractions.nuspec"
+      ]
+    },
+    "Unity.Container/5.8.13": {
+      "sha512": "qJp4QptchP7o+wDr9Q47fU+Gtz9muNJng9q3SaUQeIqBQhpwb+Db0DVQb1viC3rylhkPoJ+Vi5B2rh9vSEo0+w==",
+      "type": "package",
+      "path": "unity.container/5.8.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Container.dll",
+        "lib/net45/Unity.Container.dll",
+        "lib/net46/Unity.Container.dll",
+        "lib/net47/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "unity.container.5.8.13.nupkg.sha512",
+        "unity.container.nuspec"
+      ]
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Business/Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Business/Infrastructure/Infrastructure.csproj"
+    },
+    "News/1.0.0": {
+      "type": "project",
+      "path": "../Modules/News/News.csproj",
+      "msbuildProject": "../Modules/News/News.csproj"
+    },
+    "WebScrape/1.0.0": {
+      "type": "project",
+      "path": "../Modules/WebScrape/WebScrape.csproj",
+      "msbuildProject": "../Modules/WebScrape/WebScrape.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Infrastructure >= 1.0.0",
+      "News >= 1.0.0",
+      "Prism.Core >= 7.1.0.431",
+      "Prism.Unity >= 7.1.0.431",
+      "Prism.Wpf >= 7.1.0.431",
+      "Unity.Abstractions >= 3.3.1",
+      "Unity.Container >= 5.8.13",
+      "WebScrape >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
+      "projectName": "WebScrapping.PrismWPF",
+      "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
+      "packagesPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj"
+            },
+            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj": {
+              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj"
+            },
+            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj": {
+              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Prism.Core": {
+            "target": "Package",
+            "version": "[7.1.0.431, )"
+          },
+          "Prism.Unity": {
+            "target": "Package",
+            "version": "[7.1.0.431, )"
+          },
+          "Prism.Wpf": {
+            "target": "Package",
+            "version": "[7.1.0.431, )"
+          },
+          "Unity.Abstractions": {
+            "target": "Package",
+            "version": "[3.3.1, )"
+          },
+          "Unity.Container": {
+            "target": "Package",
+            "version": "[5.8.13, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
