@@ -356,11 +356,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj",
+      "projectUniqueName": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj",
       "projectName": "WebScrape",
-      "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj",
+      "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj",
       "packagesPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\obj\\",
+      "outputPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -377,8 +377,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

@@ -950,11 +950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
+      "projectUniqueName": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
       "projectName": "WebScrapping.PrismWPF",
-      "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
+      "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\WebScrapping.PrismWPF.csproj",
       "packagesPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\obj\\",
+      "outputPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\WebScrapping.PrismWPF\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -971,14 +971,14 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Business\\Infrastructure\\Infrastructure.csproj"
             },
-            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj": {
-              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj"
+            "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj": {
+              "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\News\\News.csproj"
             },
-            "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj": {
-              "projectPath": "C:\\Users\\nickb.DESKTOP-UNG5SPQ\\source\\repos\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj"
+            "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj": {
+              "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prism.Wpf\\Modules\\WebScrape\\WebScrape.csproj"
             }
           }
         }
