@@ -69,7 +69,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.8.11": {
+      "HtmlAgilityPack/1.8.12": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
@@ -169,7 +169,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "HtmlAgilityPack": "1.8.11",
+          "HtmlAgilityPack": "1.8.12",
           "Infrastructure": "1.0.0",
           "Prism.Wpf": "7.1.0.431"
         },
@@ -249,7 +249,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.8.11": {
+      "HtmlAgilityPack/1.8.12": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
@@ -349,7 +349,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "HtmlAgilityPack": "1.8.11",
+          "HtmlAgilityPack": "1.8.12",
           "Infrastructure": "1.0.0",
           "Prism.Wpf": "7.1.0.431"
         },
@@ -429,7 +429,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.8.11": {
+      "HtmlAgilityPack/1.8.12": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
@@ -529,7 +529,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "HtmlAgilityPack": "1.8.11",
+          "HtmlAgilityPack": "1.8.12",
           "Infrastructure": "1.0.0",
           "Prism.Wpf": "7.1.0.431"
         },
@@ -609,7 +609,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.8.11": {
+      "HtmlAgilityPack/1.8.12": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
@@ -709,7 +709,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "HtmlAgilityPack": "1.8.11",
+          "HtmlAgilityPack": "1.8.12",
           "Infrastructure": "1.0.0",
           "Prism.Wpf": "7.1.0.431"
         },
@@ -773,14 +773,14 @@
         "tools/install.ps1"
       ]
     },
-    "HtmlAgilityPack/1.8.11": {
-      "sha512": "aHMG6oLnTIvepPiyRt+k19OuDFZDhhSrB3U251kT24zrEmIdJJzYHtazvJioxjFR1fv4bjZ5v+sdb6QRxVKZww==",
+    "HtmlAgilityPack/1.8.12": {
+      "sha512": "ba4YO2CqgJxiRyMj7YaDZqMmXTYuWsqQrap2cz0HzxoMI/y3dhT9peXrwkI5st1ZKyoq0Id2L5ZxoPDMcUwlHQ==",
       "type": "package",
-      "path": "htmlagilitypack/1.8.11",
+      "path": "htmlagilitypack/1.8.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.8.11.nupkg.sha512",
+        "htmlagilitypack.1.8.12.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net20/HtmlAgilityPack.dll",
         "lib/Net20/HtmlAgilityPack.pdb",
