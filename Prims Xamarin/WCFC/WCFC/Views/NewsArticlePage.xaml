@@ -8,9 +8,14 @@
     <Grid>
         <ActivityIndicator IsRunning="{Binding IsBusy}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
-            <Label Text="{Binding Header}" HorizontalOptions="Center"/>
-            <Image Source="{Binding ImageSource}" HorizontalOptions="Center"/>
-            <Label Text="{Binding SecondaryHeader}" HorizontalOptions="Center"/>
+            <Label Text="{Binding NewsArticle.Header}" HorizontalOptions="Center"/>
+            <Image Source="{Binding NewsArticle.ImageSource}" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding NewsArticle.SubHeader}" HorizontalOptions="Center"/>
+            <ScrollView>
+                <Label Text="{Binding Message}" HorizontalOptions="Center" Margin="5"/>
+            </ScrollView>
+
+            <Button Command="{Binding OpenLink}" Text="View Full Details"/>
         </StackLayout>
     </Grid>
 </ContentPage>

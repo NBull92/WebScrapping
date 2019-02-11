@@ -1345,6 +1345,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Infrastructure.Xamarin >= 1.0.0",
       "Prism.Unity.Forms >= 7.1.0.431",
       "WCFC >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
@@ -1382,6 +1383,9 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
+            "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prims Xamarin\\Business\\Infrastructure.Xamarin\\Infrastructure.Xamarin.csproj": {
+              "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prims Xamarin\\Business\\Infrastructure.Xamarin\\Infrastructure.Xamarin.csproj"
+            },
             "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prims Xamarin\\WCFC\\WCFC\\WCFC.csproj": {
               "projectPath": "D:\\Documents\\Nick\\GitHub\\WebScrapping\\Prims Xamarin\\WCFC\\WCFC\\WCFC.csproj"
             }

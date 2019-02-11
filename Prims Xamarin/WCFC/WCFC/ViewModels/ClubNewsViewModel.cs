@@ -5,7 +5,6 @@
 
 namespace WCFC.ViewModels
 {
-    using HtmlAgilityPack;
     using Infrastructure.Xamarin;
     using Prism.Commands;
     using Prism.Navigation;
@@ -52,25 +51,10 @@ namespace WCFC.ViewModels
             var thread = new Thread(() =>
             {
                 var page = _webScrape.LoadPage("http://www.worcestercityfc.org/news/");
+                
+                var selectedNodes = _webScrape.SelectViaClass(page, "c-news-tile", "div");
 
-                var nodeClasses = new string[2] { "//a[@class='heading__title u-gamma']", "//a[@class='heading__title u-delta']" };
-
-                var nodes = new ObservableCollection<HtmlNode>();
-
-                foreach (var nodeClass in nodeClasses)
-                {
-                    var selectedNodes = _webScrape.SelectNode(page, nodeClass);
-
-                    if (selectedNodes == null)
-                        continue;
-
-                    foreach (var node in selectedNodes)
-                    {
-                        nodes.Add(node);
-                    }
-                }
-
-                foreach (var node in nodes)
+                foreach (var node in selectedNodes)
                 {
                     Device.BeginInvokeOnMainThread(() =>
                     {

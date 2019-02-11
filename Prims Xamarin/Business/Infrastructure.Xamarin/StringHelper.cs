@@ -6,12 +6,14 @@
 namespace Infrastructure.Xamarin
 {
     using System.Text.RegularExpressions;
+    using System.Linq;
 
     public static class StringHelper
     {
         public static string GetImageSourceFromHtml(string html)
         {
-            var output = Regex.Match(html, "<img.+?src=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[1].Value;
+            //var output = Regex.Match(html, "<img.+?src=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[0].Value;
+            var output = Regex.Match(html, "<img.+?data-lazy-load-image=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[1].Value;
             return output;
         }
 
@@ -33,6 +35,10 @@ namespace Infrastructure.Xamarin
                 html = html.Replace("&#039;", "'");
             }
 
+            if (html.Contains("&#xe643;"))
+            {
+                html = html.Replace("&#xe643;", "");
+            }
 
             return html;
         }

@@ -3,19 +3,16 @@
 // This code is for portfolio use only.
 //------------------------------------------------------------------------------
 
+
+using System;
+
 namespace WCFC.ViewModels
 {
-    using Prism.Commands;
-    using Prism.Mvvm;
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Linq;
-    using System.Text.RegularExpressions;
-    using System.Threading;
-    using HtmlAgilityPack;
     using Infrastructure.Xamarin;
+    using Prism.Commands;
     using Prism.Navigation;
+    using System.Linq;
+    using System.Threading;
     using WCFC.Classes;
     using Xamarin.Forms;
 
@@ -23,12 +20,18 @@ namespace WCFC.ViewModels
     {
         private readonly IWebScrapeService _webScrape;
 
+        private NewsArticle _newsArticle;
         private bool _isBusy;
         private string _imageSource;
         private string _message;
         private string _header;
         private string _secondaryHeader;
 
+        public NewsArticle NewsArticle
+        {
+            get => _newsArticle;
+            set => SetProperty(ref _newsArticle, value);
+        }
         public string Header
         {
             get => _header;
@@ -59,46 +62,55 @@ namespace WCFC.ViewModels
             set => SetProperty(ref _imageSource, value);
         }
 
+        public DelegateCommand OpenLink { get; set; }
 
         public NewsArticlePageViewModel(INavigationService navigationService, IWebScrapeService webScrape)
             : base(navigationService)
         {
             _webScrape = webScrape;
+            OpenLink = new DelegateCommand(Open);
         }
 
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
             if (parameters.ContainsKey("NewsArticle"))
             {
-                var article = parameters.FirstOrDefault(a => a.Key == "NewsArticle").Value as NewsArticle;
-                Title = $"{article?.ArticleType} News";
-                Header = article?.Header;
-
                 IsBusy = true;
-
                 var thread = new Thread(() =>
                 {
+                    var article = parameters.FirstOrDefault(a => a.Key == "NewsArticle").Value as NewsArticle;
+                    NewsArticle = article;
+                    Title = $"{article?.ArticleType} News";
+
                     var page = _webScrape.LoadPage(article.Link);
                     
-                    var imgNode = _webScrape.SelectNode(page, "//img[@class='peephole__image ']");
-                    if (imgNode != null)
+                    var selectedNodes = _webScrape.SelectViaClass(page, "u-space-bottom--large u-clearfix", "div");
+
+                    foreach (var node in selectedNodes)
                     {
-                        ImageSource = StringHelper.GetImageSourceFromHtml(imgNode.FirstOrDefault()?.OuterHtml);
+                        if (node.ChildNodes.Any(o => o.Name == "p"))
+                        {
+                            foreach (var child in node.ChildNodes.Where(o => o.Name == "p"))
+                            {
+                                if(string.IsNullOrEmpty(child.InnerText))
+                                    continue;
+
+                                Message += string.Join("\n", child.InnerText);
+                            }
+                        }
                     }
-
-
-                    var headerNode = _webScrape.SelectNode(page, "//h3[@class='u-space-bottom']");
-                    if (headerNode != null)
-                    {
-                        SecondaryHeader = StringHelper.FindAndReplaceHtmlCodes(headerNode.FirstOrDefault()?.InnerHtml);
-                    }
-
+                    
                     IsBusy = false;
                 });
                 thread.IsBackground = true;
                 thread.SetApartmentState(ApartmentState.STA);
                 thread.Start();
             }
+        }
+
+        private void Open()
+        {
+            Device.OpenUri(new Uri(NewsArticle.Link));
         }
     }
 }

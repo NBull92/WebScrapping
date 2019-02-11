@@ -57,24 +57,9 @@ namespace WCFC.ViewModels
             {
                 var page = _webScrape.LoadPage("http://www.worcestercityfc.org/league-news/7862");
 
-                var nodeClasses = new string[2] { "//a[@class='heading__title u-gamma']", "//a[@class='heading__title u-delta']" };
+                var selectedNodes = _webScrape.SelectViaClass(page, "c-news-tile", "div");
 
-                var nodes = new ObservableCollection<HtmlNode>();
-
-                foreach (var nodeClass in nodeClasses)
-                {
-                    var selectedNodes = _webScrape.SelectNode(page, nodeClass);
-
-                    if (selectedNodes == null)
-                        continue;
-
-                    foreach (var node in selectedNodes)
-                    {
-                        nodes.Add(node);
-                    }
-                }
-
-                foreach (var node in nodes)
+                foreach (var node in selectedNodes)
                 {
                     Device.BeginInvokeOnMainThread(() =>
                     {

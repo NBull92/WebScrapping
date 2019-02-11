@@ -37,6 +37,19 @@ namespace WebScrape.Xamarin
                 return null;
             }
         }
+
+        public List<HtmlNode> SelectViaClass(HtmlDocument document, string className, string element = "div")
+        {
+            try
+            {
+                return document.DocumentNode.Descendants(element).Where(x => x.Attributes["class"] != null && x.Attributes["class"].Value.Contains(className)).ToList();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+        }
     }
 }
 // WebScrape.Xamarin namespace 

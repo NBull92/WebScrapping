@@ -15,11 +15,11 @@
                                VerticalOptions="CenterAndExpand"/>
 
             <ListView ItemsSource="{Binding NewsList, Mode=TwoWay}" HorizontalOptions="CenterAndExpand"
-                      VerticalOptions="FillAndExpand">
+                      VerticalOptions="FillAndExpand" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Button Command="{Binding OpenLink}" Text="{Binding Header}"/>
+                           <Button Command="{Binding OpenLink}" Text="{Binding Header}"/>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
