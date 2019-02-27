@@ -18,3 +18,5 @@ Here's some screenshots:
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/qemu-system-x86_64_DZb4APoy9g.png)
 
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/news_page.jpg)
+
+More screenshots can be found here: https://github.com/NBull92/WebScrapping/tree/master/Images
