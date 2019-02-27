@@ -14,5 +14,7 @@ After the WPF application, I decided to try and attempt to make a mobile app tha
 You can view the mobile app running on Youtube: https://youtu.be/yYll49CSL8w
 
 Here's some screenshots:
+
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/qemu-system-x86_64_DZb4APoy9g.png)
+
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/news_page.jpg)
