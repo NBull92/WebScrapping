@@ -8,3 +8,5 @@ Using the HtmlAgilityPack and C# I created a console application that would just
 When the user clicks the button, the associated article will be loaded in their default web browser. In the futrue I would look into creating a new view within the app to showcase the news article itself.
 
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/WorcesterCity%20News%20App.jpg)
+
+Y9ou can view the mobile app running on Youtube: https://youtu.be/yYll49CSL8w
