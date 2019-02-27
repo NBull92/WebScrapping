@@ -9,4 +9,10 @@ When the user clicks the button, the associated article will be loaded in their 
 
 ![alt text](https://github.com/NBull92/WebScrapping/blob/master/WorcesterCity%20News%20App.jpg)
 
-Y9ou can view the mobile app running on Youtube: https://youtu.be/yYll49CSL8w
+After the WPF application, I decided to try and attempt to make a mobile app that I could use myself, on the go. To do this I attemppted to use Xamarin Forms with the Prism Library. Now I've not had any experience with Xamarin Forms, but with my experience with Prism, I wanted to give it a go.
+
+You can view the mobile app running on Youtube: https://youtu.be/yYll49CSL8w
+
+Here's some screenshots:
+![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/qemu-system-x86_64_DZb4APoy9g.png)
+![alt text](https://github.com/NBull92/WebScrapping/blob/master/Images/news_page.jpg)
